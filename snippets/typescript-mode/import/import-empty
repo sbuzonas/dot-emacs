@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Steve Buzonas
+# name: Import: import ... from '...'
+# key: _i
+# binding: direct-keybinding
+# expand-env: ((yas-indent-line 'auto) (yas-also-auto-indent-first-line t) (yas-wrap-around-region t))
+# --
+import ${2:${1:$(inflect-title-case yas-text)}} from '$1';

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Steve Buzonas
+# name: React: destruct object
+# key: _dobj
+# binding: direct-keybinding
+# expand-env: ((yas-indent-line 'auto) (yas-also-auto-indent-first-line t) (yas-wrap-around-region t))
+# --
+const { $1 } = $2;

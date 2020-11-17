@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Steve Buzonas
+# name: PropType: instanceOf(...)
+# key: _pti
+# binding: direct-keybinding
+# expand-env: ((yas-indent-line 'auto) (yas-also-auto-indent-first-line t) (yas-wrap-around-region t))
+# --
+PropTypes.instanceOf($1),

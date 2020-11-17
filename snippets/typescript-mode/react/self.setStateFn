@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# contributor: Steve Buzonas
+# name: React: setState((prevState) => { ... })
+# key: _rsstf
+# binding: direct-keybinding
+# expand-env: ((yas-indent-line 'auto) (yas-also-auto-indent-first-line t) (yas-wrap-around-region t))
+# --
+this.setState((prevState) => {
+    return { $1: prevState.$1 }
+});

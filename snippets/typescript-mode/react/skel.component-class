@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# contributor: Steve Buzonas
+# name: React: Component Class
+# key: _rcc
+# binding: direct-keybinding
+# expand-env: ((yas-indent-line 'auto) (yas-also-auto-indent-first-line t) (yas-wrap-around-region t))
+# --
+import * as React from 'react';
+
+class ${1:`(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`} extends React.Component {
+    public render() {
+        return (
+            ${2:<div></div>}
+        );
+    }
+}
+
+export default $1;

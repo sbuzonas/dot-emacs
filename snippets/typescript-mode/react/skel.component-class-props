@@ -1,0 +1,27 @@
+# -*- mode: snippet -*-
+# contributor: Steve Buzonas
+# name: React: Component Class PropTypes
+# key: _rccp
+# binding: direct-keybinding
+# expand-env: ((yas-indent-line 'auto) (yas-also-auto-indent-first-line t) (yas-wrap-around-region t))
+# --
+import * as React from 'react'
+import * as PropTypes from 'prop-types'
+
+export interface $2 {
+    $3: ${4:string};
+}
+
+class ${1:`(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`} extends React.Component<${2:$1Props}> {
+    public static propTypes = {
+        $3: ${6:PropTypes.${5:$4}}
+    };
+
+    public render() {
+        return (
+            ${7:<div></div>}
+        );
+    }
+}
+
+export default $1;

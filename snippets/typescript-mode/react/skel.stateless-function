@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# contributor: Steve Buzonas
+# name: React: Stateless Function
+# key: _sfc
+# binding: direct-keybinding
+# expand-env: ((yas-indent-line 'auto) (yas-also-auto-indent-first-line t) (yas-wrap-around-region t))
+# --
+export interface $2 {
+    $3: {$4:string}
+}
+
+const $1: React.SFC<${2:$1Props}> = ({ $3 }) => (
+    <div>{$3}</div>
+);
+
+$1.propTypes = {
+    $3: ${6:PropTypes.${5:$4}}
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# contributor: Steve Buzonas
+# name: React: static defaultProps = { ... }
+# key: _scdp
+# binding: direct-keybinding
+# expand-env: ((yas-indent-line 'auto) (yas-also-auto-indent-first-line t) (yas-wrap-around-region t))
+# --
+public static defaultProps = {
+    $1: PropTypes.${2:string}
+}

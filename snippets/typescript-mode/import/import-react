@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Steve Buzonas
+# name: Import: react
+# key: _ir
+# binding: direct-keybinding
+# expand-env: ((yas-indent-line 'auto) (yas-also-auto-indent-first-line t) (yas-wrap-around-region t))
+# --
+import * as React from 'react';

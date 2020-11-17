@@ -1,0 +1,22 @@
+# -*- mode: snippet -*-
+# contributor: Steve Buzonas
+# name: React: HOC
+# key: _hoc
+# binding: direct-keybinding
+# expand-env: ((yas-indent-line 'auto) (yas-also-auto-indent-first-line t) (yas-wrap-around-region t))
+# --
+import * as React from 'react';
+import hoistNonReactStatics from 'hoist-non-react-statics';
+
+function ${1:`(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`}(${2:WrappedComponent}: React.ComponentType${3:<${4:any}>}${6:, $5}) {
+    class C extends $2 {
+        $0
+    }
+
+    hoistNonReactStatics(C, $2);
+
+    const wrappedDisplayName = $2.displayName || $2.name || 'Component';
+    C.displayName = \`${3:${1:`(inflect-title-case yas-text)`}}($wrappedDisplayName)\`
+
+    return C;
+}

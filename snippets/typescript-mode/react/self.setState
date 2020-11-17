@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Steve Buzonas
+# name: React: setState({ ... })
+# key: _rsst
+# binding: direct-keybinding
+# expand-env: ((yas-indent-line 'auto) (yas-also-auto-indent-first-line t) (yas-wrap-around-region t))
+# --
+this.setState({ $1: $2 })

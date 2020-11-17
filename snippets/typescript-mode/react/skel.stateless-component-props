@@ -1,0 +1,23 @@
+# -*- mode: snippet -*-
+# contributor: Steve Buzonas
+# name: React: Stateless Component PropTypes
+# key: _rscp
+# binding: direct-keybinding
+# expand-env: ((yas-indent-line 'auto) (yas-also-auto-indent-first-line t) (yas-wrap-around-region t))
+# --
+import * as React from 'react';
+import * as PropTypes from 'prop-types';
+
+export interface $2 {
+    $3: ${4:string};
+}
+
+const ${1:`(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`}: React.SFC<${2:$1Props}> = ({ $3 }) => (
+    ${7:<div></div>}
+);
+
+$1.propTypes = {
+    $3: ${6:PropTypes.${5:$4}},
+};
+
+export default $1;

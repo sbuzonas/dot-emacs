@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# contributor: Steve Buzonas
+# name: React: static propTypes = { ... }
+# key: _scpt
+# binding: direct-keybinding
+# expand-env: ((yas-indent-line 'auto) (yas-also-auto-indent-first-line t) (yas-wrap-around-region t))
+# --
+public static propTypes = {
+    $1: PropTypes.${2:string}
+}

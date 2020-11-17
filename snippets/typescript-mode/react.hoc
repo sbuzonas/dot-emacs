@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# contributor: Steve Buzonas
+# name: React: HOC
+# key: rhoc
+# binding: direct-keybinding
+# expand-env: ((yas-indent-line 'auto) (yas-also-auto-indent-first-line t) (yas-wrap-around-region t))
+# --
+function ${1:`(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`}($2${5:, ${4}}) {
+    class C extends ${2:WrappedComponent} {
+    }
+
+    const displayName = $2.displayName || $2.name || 'Component';
+
+    C.displayName = \`${3:${1:`(inflect-title-case yas-text)`}}($displayName)\`
+
+    return C;
+}

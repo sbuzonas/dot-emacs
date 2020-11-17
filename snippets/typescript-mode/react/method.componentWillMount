@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# contributor: Steve Buzonas
+# name: React: componentWillMount() { ... }
+# key: _cwm
+# binding: direct-keybinding
+# expand-env: ((yas-indent-line 'auto) (yas-also-auto-indent-first-line t) (yas-wrap-around-region t))
+# --
+// WARNING! To be deprecated in React v17. Use componentDidMount instead.
+public componentWillMount() {
+    $1
+}
+$0

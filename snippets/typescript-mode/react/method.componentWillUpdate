@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# contributor: Steve Buzonas
+# name: React: componentWillUpdate(np, ns) { ... }
+# key: _cwup
+# binding: direct-keybinding
+# expand-env: ((yas-indent-line 'auto) (yas-also-auto-indent-first-line t) (yas-wrap-around-region t))
+# --
+// WARNING! To be deprecated in React v17. Use componentDidUpdate instead.
+public componentWillUpdate(nextProps, nextState) {
+    $1
+}
+$0
